@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+body {
+    background-color: #24414d;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+.contact {
+    box-sizing: border-box;
+    width: 800px;
+    height: 500px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: var(--light);
+    font-size: 48px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 24px;
+    color: #b4bcbf;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin-left: 20px;
+}
+
+h4:hover {
+    cursor: pointer;
+}
+
+.black {
+    color: #e9d6d6;
+}
+
+.blue {
+    color: #12c6cc;
+}
+
+ion-icon {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+ion-icon:hover {
+    cursor: pointer;
+}
+
+.contact p {
+    margin: 0;
+    font-family: 'Kanit', 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #a1a8ac;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 896px) {
+    h4 {
+        font-size: 20px;
+    }
+    .contact {
+        height: 700px;
+    }
+    #main {
+        margin-top: 80px;
+    }
+    .contact p {
+        width: 90%;
+    }
+}

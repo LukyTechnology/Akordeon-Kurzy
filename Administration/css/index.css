@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+body {
+    background-color: #24414d;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#main {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+.kurz-1 {
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    width: 300px;
+    height: 500px;
+    border-right: 2px solid cyan;
+}
+
+.kurz-2 {
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    width: 300px;
+    height: 500px;
+    border-right: 2px solid cyan;
+    margin-left: 10px;
+}
+
+.kurz-3 {
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    width: 300px;
+    height: 500px;
+    border-right: 2px solid cyan;
+    margin-left: 10px;
+}
+
+.kurz-4 {
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    width: 300px;
+    height: 500px;
+    margin-left: 10px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: var(--light);
+    font-size: 30px;
+}
+
+h2 {
+    margin-top: 40px;
+    font-family: 'Pacifico', cursive;
+}
+
+h4 {
+    font-size: 14px;
+    color: #b4bcbf;
+    font-family: 'Kanit', 'Roboto', sans-serif;
+    font-style: italic;
+    margin-top: -15px;
+    margin-bottom: 40px;
+}
+
+h6 {
+    color: var(--light);
+    font-size: 14px;
+    font-family: 'Kanit', 'Roboto', sans-serif;
+    font-style: italic;
+    text-align: left;
+    margin-left: 80px;
+    margin-top: -20px;
+}
+
+.desc {
+    color: #b9b1b1;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    font-style: italic;
+}
+
+.desc2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    height: 45px;
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(100%);
+    transition: 0.5s;
+    color: var(--bdark);
+}
+
+.buy-btn {
+    background-color: #1bd065;
+    border: 2px solid #1cb058;
+    border-radius: 15px;
+}
+
+.link-btn {
+    margin-top: 30px;
+    background-color: #1fcfd5;
+    border: 2px solid #2bafb3;
+    border-radius: 15px;
+}
+
+button:hover {
+    transform: scale(125%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.progress {
+    position: relative;
+    width: 500px;
+    height: 50px;
+    background: #9cbab4;
+    overflow: hidden;
+    border-radius: 20px;
+    border: solid 3px #FFF;
+}
+
+.progress__fill {
+    width: 10%;
+    height: 100%;
+    background: #009579;
+}
+
+.progress__text {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 896px) {
+    #main {
+        display: block;
+        height: 2050px;
+        margin-top: 100px;
+    }
+    .kurz-1, .kurz-2, .kurz-3, .kurz-4 {
+        border-right: none;
+        border-bottom: 2px solid cyan;
+    }
+    .mobile-center {
+        display: flex;
+        justify-content: center;
+    }
+    .desc2 {
+        font-size: 14px;
+        text-align: center;
+        padding: 0 10px;
+    }
+}

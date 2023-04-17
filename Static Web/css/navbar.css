@@ -1,0 +1,97 @@
+.navbar {
+    width: 1200px;
+    height: 92px;
+    background-color: var(--light);
+    border: 8px solid var(--main);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 20px;
+    z-index: 99;
+}
+
+nav img {
+    height: 80px;
+    margin-right: 25%;
+    margin-top: 5px; 
+}
+
+nav img:hover {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.navbar a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    transform: scale(100%);
+    transition: 1s;
+}
+
+.navbar button {
+    margin-left: 70px;
+    background-color: var(--main);
+    border: 10px solid var(--main);
+    border-radius: 40px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    color: var(--dark);
+    transform: scale(100%);
+    transition: 1s;
+}
+
+.navbar button:hover {
+    cursor: pointer;
+    transform: scale(120%);
+    transition: 1s;
+}
+
+.navbar a:hover {
+    transform: scale(140%);
+    transition: 1s;
+}
+
+
+@media only screen and (max-width: 896px) {
+    .navbar {
+        width: 300px;
+        height: 60px;
+    }
+    .navbar a {
+        display: none;
+    }
+    header {
+        top: 5px;
+    }
+    nav img {
+        height: 50px;
+        margin-right: 110px;
+    }
+    .navbar button {
+        font-size: 16px;
+        margin-left: 0;
+    }
+}
